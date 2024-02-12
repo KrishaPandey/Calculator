@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.co::before{
+    content: " Mini Calculator";
+     text-align: center;
+     
+}
+
+.co{
+display: grid;
+gap: 2rem;
+padding: 20px 20px 20px 20px;
+border: 1px solid black;
+border-radius: 10px;
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:10px;
+    
+}
+ button{
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(146, 95, 95, 0.201);
+    
+}
+.buttons button:active{
+   transform: scale(1.2);
+    
+}
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline:none;
+    text-align: right;
+}
+input[type="text"]::placeholder{
+    color:black;
+    text-align: right;
+    
+}
+
+.buttons :nth-child(4n){
+    background-color: orange;
+
+}
+.buttons :nth-child(19){
+    background-color: orange;}
+
+.buttons :nth-child(7){
+ content: "X";
+}
+    
+
+
+
+
+
